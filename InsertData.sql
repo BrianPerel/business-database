@@ -7,8 +7,6 @@ INSERT INTO EMPLOYEES VALUES(10024, 'Dimitri', 'Hulsin', 'Boston', 'MA');
 INSERT INTO EMPLOYEES VALUES(10025, 'Tim', 'Harper', 'Boston', 'MA');
 
 
-
-
 SELECT * FROM CUSTOMERS;
 
 INSERT INTO CUSTOMERS VALUES(80090, 'Bill', 'Mares', 'Hartford', 'CT');
@@ -18,7 +16,6 @@ INSERT INTO CUSTOMERS VALUES(80093, 'Nick', 'Davidson', 'Hartford', 'CT');
 INSERT INTO CUSTOMERS VALUES(80094, 'John', 'Wang', 'Boston', 'MA');
 
 
-
 SELECT * FROM ITEM;
 
 INSERT INTO ITEM VALUES(54040, 'The Matrix Poster', '7.95', 30000);
@@ -26,7 +23,6 @@ INSERT INTO ITEM VALUES(54041, 'Car Steering Wheel Cover', '34.99', 40000);
 INSERT INTO ITEM VALUES(54042, 'Blue earbuds', '9.99', 80000);
 INSERT INTO ITEM VALUES(54043, 'Sony XBE483A HD TV', '600.00', 150000);
 INSERT INTO ITEM VALUES(54044, 'Gildan Mens Assorted V-neck T-shirts Multipack', '15.00', 30000);
-
 
 
 SELECT * FROM ORDERS;
