@@ -26,6 +26,7 @@ PRIMARY KEY (Customer_number)
 
 --
 -- TABLE: item
+--
 CREATE TABLE item (
 Item_number int,
 item_name varchar(80) NOT NULL,
