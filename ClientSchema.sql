@@ -1,3 +1,12 @@
+-- Create and grant all privileges to user
+CREATE USER Amazon IDENTIFIED BY amazon;
+GRANT ALL PRIVILEGES TO Amazon;
+
+
+-- Create database
+CREATE DATABASE Amazon;
+
+
 --
 -- TABLE: employees
 --
