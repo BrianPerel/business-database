@@ -1,4 +1,4 @@
-SELECT * FROM customers;
+SELECT * FROM customers ORDER BY lname ASC;
 
 SELECT * FROM items
 WHERE item_number = ( SELECT item_number FROM orders
