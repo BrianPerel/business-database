@@ -1,4 +1,4 @@
--- Create and grant all privileges to user
+-- Create and grant all privileges to a user (admin)
 CREATE USER Amazon IDENTIFIED BY amazon;
 GRANT ALL PRIVILEGES TO Amazon;
 
