@@ -37,9 +37,9 @@ FROM Customers
 WHERE Customer_number
 NOT IN(SELECT Customer_number FROM Orders);
 
-select i.Item_number, i.Item_name, sum (o.quantity) from Item i inner join Orders o on i.Item_number = o.Item_number 
-group by i.item_number, i.item_name;
+SELECT i.Item_number, i.Item_name, sum (o.quantity) FROM Item i inner JOIN Orders o ON i.Item_number = o.Item_number 
+GROUP BY i.item_number, i.item_name;
 
-select e.Employee_number, e.Fname, e.Lname, sum (i.price * o.quantity) as Totalsales from Employees e 
-inner join Orders o on e.Employee_number = o.Employee_number
-inner join Item i on o.Item_number = i.Item_number group by e.Employee_number, e.Fname, e.Lname;
+SELECT e.Employee_number, e.Fname, e.Lname, sum (i.price * o.quantity) AS Totalsales FROM Employees e 
+inner JOIN Orders o ON e.Employee_number = o.Employee_number
+inner JOIN Item i ON o.Item_number = i.Item_number GROUP BY e.Employee_number, e.Fname, e.Lname;
