@@ -25,9 +25,9 @@ PRIMARY KEY (customer_number)
 
 
 --
--- TABLE: item
+-- TABLE: items
 --
-CREATE TABLE item (
+CREATE TABLE items (
 item_number INT,
 item_name varchar(80) NOT NULL,
 price decimal(10,2) NOT NULL,
@@ -49,6 +49,6 @@ ship_date DATE,
 PRIMARY KEY (order_number),
 CONSTRAINT FK_CustomerOrder FOREIGN KEY (customer_number) REFERENCES customers(customer_number),
 CONSTRAINT FK_EmployeeOrder FOREIGN KEY (employee_number) REFERENCES employees(employee_number),
-CONSTRAINT FK_ItemOrder FOREIGN KEY (item_number) REFERENCES item(item_number)
+CONSTRAINT FK_ItemOrder FOREIGN KEY (item_number) REFERENCES items(item_number)
 );
 
