@@ -51,3 +51,4 @@ CONSTRAINT FK_CustomerOrder FOREIGN KEY (Customer_number) REFERENCES customers(C
 CONSTRAINT FK_EmployeeOrder FOREIGN KEY (Employee_number) REFERENCES employees(Employee_number),
 CONSTRAINT FK_ItemOrder FOREIGN KEY (Item_number) REFERENCES item(Item_number)
 );
+
