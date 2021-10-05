@@ -1,3 +1,6 @@
+--
+-- TABLE: employees
+--
 CREATE TABLE employees (
 Employee_number int,
 fName varchar(10) NOT NULL,
@@ -8,6 +11,9 @@ PRIMARY KEY (Employee_number)
 );
 
 
+--
+-- TABLE: customers
+--
 CREATE TABLE customers (
 Customer_number int,
 fName varchar(10) NOT NULL,
@@ -17,6 +23,9 @@ state varchar(2) NOT NULL,
 PRIMARY KEY (Customer_number)
 );
 
+
+--
+-- TABLE: item
 CREATE TABLE item (
 Item_number int,
 item_name varchar(80) NOT NULL,
@@ -25,6 +34,9 @@ Stock_quantity int,
 PRIMARY KEY (Item_number)
 );
 
+--
+-- TABLE: orders
+--
 CREATE TABLE orders (
 Order_number int,
 Customer_number int,
@@ -38,5 +50,3 @@ CONSTRAINT FK_CustomerOrder FOREIGN KEY (Customer_number) REFERENCES customers(C
 CONSTRAINT FK_EmployeeOrder FOREIGN KEY (Employee_number) REFERENCES employees(Employee_number),
 CONSTRAINT FK_ItemOrder FOREIGN KEY (Item_number) REFERENCES item(Item_number)
 );
-
-
