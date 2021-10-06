@@ -12,10 +12,10 @@ CREATE DATABASE Amazon;
 --
 CREATE TABLE employees (
 employee_number INT,
-fName varchar(10) NOT NULL,
-lName varchar(20) NOT NULL,
-city varchar(20) NOT NULL,
-state varchar(2) NOT NULL,
+fName VARCHAR(10) NOT NULL,
+lName VARCHAR(20) NOT NULL,
+city VARCHAR(20) NOT NULL,
+state VARCHAR(2) NOT NULL,
 PRIMARY KEY (employee_number)
 );
 
@@ -25,10 +25,10 @@ PRIMARY KEY (employee_number)
 --
 CREATE TABLE customers (
 customer_number INT,
-fName varchar(10) NOT NULL,
-lName varchar(20) NOT NULL,
-city varchar(20) NOT NULL,
-state varchar(2) NOT NULL,
+fName VARCHAR(10) NOT NULL,
+lName VARCHAR(20) NOT NULL,
+city VARCHAR(20) NOT NULL,
+state VARCHAR(2) NOT NULL,
 PRIMARY KEY (customer_number)
 );
 
@@ -52,7 +52,7 @@ order_number INT,
 customer_number INT,
 employee_number INT,
 item_number INT,
-quantity INT,
+quantity INT DEFAULT 1,
 date_of_receipt INT,
 ship_date DATE,
 PRIMARY KEY (order_number),
