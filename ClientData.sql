@@ -44,3 +44,4 @@ INSERT INTO orders VALUES(30025, 80094, 10022, 54040, 5, DATE '2018-06-30', DATE
 
 -- verify that the tables have been populated
 SELECT * FROM all_tables;
+
