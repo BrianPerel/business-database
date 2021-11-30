@@ -38,8 +38,8 @@ PRIMARY KEY (customer_number)
 --
 CREATE TABLE items (
 item_number INT,
-item_name varchar(80) NOT NULL,
-price decimal(10,2) NOT NULL,
+item_name VARCHAR(80) NOT NULL,
+price DECIMAL(10,2) NOT NULL,
 stock_quantity INT,
 PRIMARY KEY (item_number)
 );
